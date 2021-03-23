@@ -11,16 +11,22 @@ export default function Layout({ children, title }) {
         <meta name="og:title" content={title} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <div id="def-top"></div>
 
-      
-<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro" /></head>
-      <main className="flex flex-col items-center flex-1 px-20 text-center">
-        <div className="bg-gray-300 rounded-xl p-5">{children}</div>
+      <main d="wb-cont" role="main" property="mainContentOfPage" class="container-fluid" >
+
+        <div>{children}</div>
+
+        <div id="def-preFooter"></div>
+
       </main>
-      <br />
-      <footer className="flex items-center justify-center w-full h-24 border-t rounded-xl">
+
+      <div id="def-footer"></div>
+
+      {/* <footer className="flex items-center justify-center w-full h-24 border-t rounded-xl">
         DTS-STN
-      </footer>
+      </footer> */}
+
     </div>
   );
 }

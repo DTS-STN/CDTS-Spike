@@ -17,4 +17,11 @@ module.exports = {
   moduleNameMapper: {
     '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
   },
+  env: {
+    cdnEnv: 'prod',
+    subTheme: 'gcweb',
+    jqueryEnv: 'external',
+    localPath: '',
+    isApplication: true,
+  },
 }
